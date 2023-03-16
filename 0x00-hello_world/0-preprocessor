@@ -1,13 +1,2 @@
 #!/bin/bash
-
-# Get the C file name from the environment variable
-CFILE=$CFILE
-
-# Define the output file name
-OUTPUT=c
-
-# Run the preprocessor and save the result into the output file
-gcc -E $CFILE -o $OUTPUT
-
-# Display the last few lines of the output file
-tail $OUTPUT
+gcc -E $CFILE -o c
